@@ -267,6 +267,8 @@
 		EAB39561201A2BF90054B5BD /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				EAB3956B201A2BF90054B5BD /* GXAdditions.h */,
+				EAB39585201A2BF90054B5BD /* Log */,
 				EAB39562201A2BF90054B5BD /* NSFileHandle+Addition.m */,
 				EAB39563201A2BF90054B5BD /* UIButton+GXAddition.h */,
 				EAB39564201A2BF90054B5BD /* NSDate+GBSAddition.h */,
@@ -276,7 +278,6 @@
 				EAB39568201A2BF90054B5BD /* UIView+GXAddition.m */,
 				EAB39569201A2BF90054B5BD /* NSMutableArray+Helper.m */,
 				EAB3956A201A2BF90054B5BD /* NSURLSession+GXAddition.m */,
-				EAB3956B201A2BF90054B5BD /* GXAdditions.h */,
 				EAB3956C201A2BF90054B5BD /* UILabel+GXAddition.m */,
 				EAB3956D201A2BF90054B5BD /* UIScrollView+GXAddition.m */,
 				EAB3956E201A2BF90054B5BD /* UIViewController+GXAddition.h */,
@@ -302,7 +303,6 @@
 				EAB39582201A2BF90054B5BD /* UIScrollView+GXAddition.h */,
 				EAB39583201A2BF90054B5BD /* UILabel+GXAddition.h */,
 				EAB39584201A2BF90054B5BD /* NSURLSession+GXAddition.h */,
-				EAB39585201A2BF90054B5BD /* Log */,
 				EAB39588201A2BF90054B5BD /* NSMutableArray+Helper.h */,
 				EAB39589201A2BF90054B5BD /* NSArray+Addition.h */,
 				EAB3958A201A2BF90054B5BD /* UINavigationController+GXAddition.h */,
@@ -334,6 +334,7 @@
 		EAB39591201A2BF90054B5BD /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				EAB395A5201A2BF90054B5BD /* GXBase.h */,
 				EAB39592201A2BF90054B5BD /* GXBaseTextView.m */,
 				EAB39593201A2BF90054B5BD /* GXBaseTableViewCell.h */,
 				EAB39594201A2BF90054B5BD /* GXBaseScrollView.m */,
@@ -353,7 +354,6 @@
 				EAB395A2201A2BF90054B5BD /* GXBaseTextView.h */,
 				EAB395A3201A2BF90054B5BD /* GXBaseView.h */,
 				EAB395A4201A2BF90054B5BD /* GXBaseViewController.h */,
-				EAB395A5201A2BF90054B5BD /* GXBase.h */,
 				EAB395A6201A2BF90054B5BD /* GXBaseTableView.m */,
 				EAB395A7201A2BF90054B5BD /* GXBaseNavigationController.m */,
 				EAB395A8201A2BF90054B5BD /* GXGenericity.h */,
