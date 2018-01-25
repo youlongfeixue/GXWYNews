@@ -30,13 +30,6 @@
 }
 
 
-- (void)bindData:(id)obj rowId:(int)rowId {
-//    NSLog(@"bindData:T rowId: 此方法未实现! ");
-}
-- (void)bindData:(DataRow *)row rowId:(int)rowId orderType:(int)orderType {
-    
-}
-
 
 
 

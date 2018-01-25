@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UITableViewCell+TouchEvent.h" //点击tableView触发
 
 
 @interface GXBaseTableViewCell : UITableViewCell
@@ -16,7 +15,6 @@
 
 - (void)setupUI;
 
-- (void)bindData:(id)obj rowId:(int)rowId;
 
 @end
 

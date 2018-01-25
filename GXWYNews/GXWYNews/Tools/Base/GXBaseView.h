@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "UIView+GXAddition.h"
 #import "UIView+Jump.h" //view所在的控制器
-#import "UIView+DeadLine.h"
 #import "UIView+Extension.h" //view的坐标和尺寸简化
 
 @interface GXBaseView : UIView
