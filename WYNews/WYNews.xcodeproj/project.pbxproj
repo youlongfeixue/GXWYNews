@@ -30,6 +30,7 @@
 		EA60A16B2018DEE800FE46C1 /* WYMainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYMainTabBarController.m; sourceTree = "<group>"; };
 		EA60A16D2018DF0200FE46C1 /* WYHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYHomeViewController.h; sourceTree = "<group>"; };
 		EA60A16E2018DF0200FE46C1 /* WYHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYHomeViewController.m; sourceTree = "<group>"; };
+		EAB39527201A24C40054B5BD /* WYPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYPrefixHeader.pch; sourceTree = "<group>"; };
 		FF95AD6EE4E606B402A0FF94 /* Pods-WYNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-WYNews/Pods-WYNews.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +100,7 @@
 				EA60A14F2018DAC400FE46C1 /* LaunchScreen.storyboard */,
 				EA60A1522018DAC400FE46C1 /* Info.plist */,
 				EA60A1532018DAC400FE46C1 /* main.m */,
+				EAB39527201A24C40054B5BD /* WYPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -394,6 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JZ9937LUN;
+				GCC_PREFIX_HEADER = WYNews/WYPrefixHeader.pch;
 				INFOPLIST_FILE = WYNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -410,6 +413,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JZ9937LUN;
+				GCC_PREFIX_HEADER = WYNews/WYPrefixHeader.pch;
 				INFOPLIST_FILE = WYNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
