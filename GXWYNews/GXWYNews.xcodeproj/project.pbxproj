@@ -11,11 +11,15 @@
 		EAB3953E201A26210054B5BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB3953D201A26210054B5BD /* Assets.xcassets */; };
 		EAB39541201A26210054B5BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB3953F201A26210054B5BD /* LaunchScreen.storyboard */; };
 		EAB39544201A26210054B5BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB39543201A26210054B5BD /* main.m */; };
-		EAB39553201A26990054B5BD /* WYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB3954E201A26990054B5BD /* WYHomeViewController.m */; };
-		EAB39554201A26990054B5BD /* WYMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB39551201A26990054B5BD /* WYMainTabBarController.m */; };
+		EAB3955D201A28D20054B5BD /* WYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB39557201A28D20054B5BD /* WYHomeViewController.m */; };
+		EAB3955E201A28D20054B5BD /* WYMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB3955A201A28D20054B5BD /* WYMainTabBarController.m */; };
+		F7E87F40F050473381666DA4 /* libPods-GXWYNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E2993B90FD2D91272E388E /* libPods-GXWYNews.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74E2993B90FD2D91272E388E /* libPods-GXWYNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GXWYNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3725BAB7DCC142409642F21 /* Pods-GXWYNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXWYNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-GXWYNews/Pods-GXWYNews.release.xcconfig"; sourceTree = "<group>"; };
+		E9DBB0ECCE5069E2362D4DB6 /* Pods-GXWYNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXWYNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GXWYNews/Pods-GXWYNews.debug.xcconfig"; sourceTree = "<group>"; };
 		EAB39531201A26210054B5BD /* GXWYNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GXWYNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB39534201A26210054B5BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EAB39535201A26210054B5BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -23,10 +27,10 @@
 		EAB39540201A26210054B5BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAB39542201A26210054B5BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAB39543201A26210054B5BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EAB3954E201A26990054B5BD /* WYHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYHomeViewController.m; sourceTree = "<group>"; };
-		EAB3954F201A26990054B5BD /* WYHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYHomeViewController.h; sourceTree = "<group>"; };
-		EAB39551201A26990054B5BD /* WYMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYMainTabBarController.m; sourceTree = "<group>"; };
-		EAB39552201A26990054B5BD /* WYMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYMainTabBarController.h; sourceTree = "<group>"; };
+		EAB39557201A28D20054B5BD /* WYHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYHomeViewController.m; sourceTree = "<group>"; };
+		EAB39558201A28D20054B5BD /* WYHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYHomeViewController.h; sourceTree = "<group>"; };
+		EAB3955A201A28D20054B5BD /* WYMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYMainTabBarController.m; sourceTree = "<group>"; };
+		EAB3955B201A28D20054B5BD /* WYMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYMainTabBarController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,17 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E87F40F050473381666DA4 /* libPods-GXWYNews.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA814D28C9C0450CB77A9D22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74E2993B90FD2D91272E388E /* libPods-GXWYNews.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9260EEFCA0152254A619A62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9DBB0ECCE5069E2362D4DB6 /* Pods-GXWYNews.debug.xcconfig */,
+				E3725BAB7DCC142409642F21 /* Pods-GXWYNews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EAB39528201A26210054B5BD = {
 			isa = PBXGroup;
 			children = (
 				EAB39533201A26210054B5BD /* GXWYNews */,
 				EAB39532201A26210054B5BD /* Products */,
+				E9260EEFCA0152254A619A62 /* Pods */,
+				DA814D28C9C0450CB77A9D22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,8 +83,8 @@
 		EAB39533201A26210054B5BD /* GXWYNews */ = {
 			isa = PBXGroup;
 			children = (
-				EAB3954B201A26990054B5BD /* Tools */,
-				EAB3954C201A26990054B5BD /* Classes */,
+				EAB3955C201A28D20054B5BD /* Tools */,
+				EAB39555201A28D20054B5BD /* Classes */,
 				EAB39534201A26210054B5BD /* AppDelegate.h */,
 				EAB39535201A26210054B5BD /* AppDelegate.m */,
 				EAB3954A201A26490054B5BD /* Supporting Files */,
@@ -79,40 +103,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EAB3954B201A26990054B5BD /* Tools */ = {
+		EAB39555201A28D20054B5BD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EAB39559201A28D20054B5BD /* Main */,
+				EAB39556201A28D20054B5BD /* Home */,
 			);
-			name = Tools;
-			path = ../../WYNews1/WYNews/Tools;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		EAB3954C201A26990054B5BD /* Classes */ = {
+		EAB39556201A28D20054B5BD /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				EAB39550201A26990054B5BD /* Main */,
-				EAB3954D201A26990054B5BD /* Home */,
-			);
-			name = Classes;
-			path = ../../WYNews1/WYNews/Classes;
-			sourceTree = "<group>";
-		};
-		EAB3954D201A26990054B5BD /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				EAB3954E201A26990054B5BD /* WYHomeViewController.m */,
-				EAB3954F201A26990054B5BD /* WYHomeViewController.h */,
+				EAB39557201A28D20054B5BD /* WYHomeViewController.m */,
+				EAB39558201A28D20054B5BD /* WYHomeViewController.h */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		EAB39550201A26990054B5BD /* Main */ = {
+		EAB39559201A28D20054B5BD /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				EAB39551201A26990054B5BD /* WYMainTabBarController.m */,
-				EAB39552201A26990054B5BD /* WYMainTabBarController.h */,
+				EAB3955A201A28D20054B5BD /* WYMainTabBarController.m */,
+				EAB3955B201A28D20054B5BD /* WYMainTabBarController.h */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		EAB3955C201A28D20054B5BD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAB39547201A26210054B5BD /* Build configuration list for PBXNativeTarget "GXWYNews" */;
 			buildPhases = (
+				D236D36F56292B0A0E26F874 /* [CP] Check Pods Manifest.lock */,
 				EAB3952D201A26210054B5BD /* Sources */,
 				EAB3952E201A26210054B5BD /* Frameworks */,
 				EAB3952F201A26210054B5BD /* Resources */,
+				029007BD18060F6E8807CC60 /* [CP] Embed Pods Frameworks */,
+				C57C9F361E786AC0C930BC54 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,13 +206,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		029007BD18060F6E8807CC60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GXWYNews/Pods-GXWYNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C57C9F361E786AC0C930BC54 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GXWYNews/Pods-GXWYNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D236D36F56292B0A0E26F874 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GXWYNews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EAB3952D201A26210054B5BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAB39554201A26990054B5BD /* WYMainTabBarController.m in Sources */,
-				EAB39553201A26990054B5BD /* WYHomeViewController.m in Sources */,
+				EAB3955E201A28D20054B5BD /* WYMainTabBarController.m in Sources */,
+				EAB3955D201A28D20054B5BD /* WYHomeViewController.m in Sources */,
 				EAB39544201A26210054B5BD /* main.m in Sources */,
 				EAB39536201A26210054B5BD /* AppDelegate.m in Sources */,
 			);
@@ -313,6 +389,7 @@
 		};
 		EAB39548201A26210054B5BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9DBB0ECCE5069E2362D4DB6 /* Pods-GXWYNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -328,6 +405,7 @@
 		};
 		EAB39549201A26210054B5BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3725BAB7DCC142409642F21 /* Pods-GXWYNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
