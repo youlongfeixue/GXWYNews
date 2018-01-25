@@ -1,0 +1,20 @@
+//
+//  WYPrefixHeader.pch
+//  GXWYNews
+//
+//  Created by Tony on 2018/1/25.
+//  Copyright © 2018年 Tony. All rights reserved.
+//
+
+
+#if __OBJC__
+
+#import <masonry.h>
+#import <NSObject+YYModel.h>
+
+
+
+#endif
+
+
+

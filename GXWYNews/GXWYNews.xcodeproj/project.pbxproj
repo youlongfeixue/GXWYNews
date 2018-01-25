@@ -148,6 +148,7 @@
 		EAB395D7201A2CF20054B5BD /* UIView+Jump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Jump.m"; sourceTree = "<group>"; };
 		EAB395D9201A2D420054B5BD /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Extension.h"; path = "GXWYNews/Tools/Additions/UIView+Extension.h"; sourceTree = SOURCE_ROOT; };
 		EAB395DA201A2D420054B5BD /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extension.m"; path = "GXWYNews/Tools/Additions/UIView+Extension.m"; sourceTree = SOURCE_ROOT; };
+		EAB395DF201A30990054B5BD /* WYPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +218,7 @@
 				EAB3953F201A26210054B5BD /* LaunchScreen.storyboard */,
 				EAB39542201A26210054B5BD /* Info.plist */,
 				EAB39543201A26210054B5BD /* main.m */,
+				EAB395DF201A30990054B5BD /* WYPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -660,6 +662,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JZ9937LUN;
+				GCC_PREFIX_HEADER = GXWYNews/WYPrefixHeader.pch;
 				INFOPLIST_FILE = GXWYNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -676,6 +679,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JZ9937LUN;
+				GCC_PREFIX_HEADER = GXWYNews/WYPrefixHeader.pch;
 				INFOPLIST_FILE = GXWYNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
