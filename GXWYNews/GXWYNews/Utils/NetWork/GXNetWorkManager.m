@@ -26,7 +26,23 @@
 
 #pragma mark -  封装 AFN 网络请求
 
+#pragma mark -  GET
 
+- (void)GET:(NSString *)URLString parameters:(id)parameters completion:(void (^)(id json, NSError *error))completion
+{
+    [self GET:URLString parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        //
+        completion(responseObject, nil);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        //
+        completion(nil, error);
+    }];
+}
+
+
+
+#pragma mark -  POST
 
 
 

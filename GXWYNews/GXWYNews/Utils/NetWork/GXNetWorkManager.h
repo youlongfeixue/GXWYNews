@@ -12,5 +12,30 @@
 
 + (instancetype)sharedManager;
 
+#pragma mark -  封装 AFN 网络请求
+
+#pragma mark -  GET
+
+- (void)GET:(NSString *)URLString parameters:(id)parameters completion:(void (^)(id json, NSError *error))completion;
+
+#pragma mark -  POST
+
+
+
+
+
+
+
+
 
 @end
+
+
+
+
+
+
+
+
+
+
