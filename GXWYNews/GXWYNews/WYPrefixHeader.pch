@@ -11,7 +11,7 @@
 
 #import <masonry.h>
 #import <NSObject+YYModel.h>
-
+#import "GXAdditions.h"
 
 
 #endif

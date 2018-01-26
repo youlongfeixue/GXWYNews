@@ -41,6 +41,10 @@
 
 /// 添加所有的子控制器 
 - (void)addChildViewControllers {
+    
+    // 设置bar字体的颜色
+    self.tabBar.tintColor = [UIColor gx_colorWithHex:0xDF0000];
+    
     // 视图控制器的字典数组
     NSArray *arr = @[
                      @{@"clsName": @"UIViewController", @"title": @"新闻", @"imageName": @"news"},
@@ -50,6 +54,7 @@
                      @{@"clsName": @"UIViewController", @"title": @"我", @"imageName": @"me"},
                      ];
     
+    // 遍历数组，创建子控制器数组
     NSMutableArray *vcsM = [NSMutableArray array];
     for (NSDictionary *dict in arr) {
         [vcsM addObject:[self childViewControllerWithDict:dict]];
@@ -77,7 +82,7 @@
     vc.tabBarItem.image = [UIImage imageNamed:imgName];    
     
     NSString *imgNameHL = [NSString stringWithFormat:@"tabbar_icon_%@_highlight", dict[@"imageName"]];
-    vc.tabBarItem.selectedImage = [UIImage imageNamed:imgNameHL];  
+    vc.tabBarItem.selectedImage = [[UIImage imageNamed:imgNameHL] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     // 4. add nav vc
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
