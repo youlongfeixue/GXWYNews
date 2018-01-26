@@ -18,6 +18,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    // appearance 在 window 创建前设置
+    [self setupAppearance];
+    
+    
 //    sleep(1.f);
     
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -31,6 +35,11 @@
     
     return YES;
 }
+
+- (void)setupAppearance {
+    [UITabBar appearance].tintColor = [UIColor gx_colorWithHex:0xDF0000];
+}
+
 
 
 
