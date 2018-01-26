@@ -211,7 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				EAB395EF201B90450054B5BD /* Utils */,
-				EAB39560201A2BF90054B5BD /* Tools */,
+				EAB3966E201B90A00054B5BD /* Tools */,
 				EAB39555201A28D20054B5BD /* Classes */,
 				EAB39534201A26210054B5BD /* AppDelegate.h */,
 				EAB39535201A26210054B5BD /* AppDelegate.m */,
@@ -261,13 +261,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		EAB39560201A2BF90054B5BD /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
 		EAB395E0201B86C30054B5BD /* NewsList */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,8 +283,8 @@
 			isa = PBXGroup;
 			children = (
 				EAB395F0201B90450054B5BD /* Additions */,
-				EAB39626201B90450054B5BD /* NetWork */,
 				EAB39629201B90450054B5BD /* Base */,
+				EAB39626201B90450054B5BD /* NetWork */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -404,6 +397,13 @@
 				EAB39644201B90450054B5BD /* GXBaseControl.h */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		EAB3966E201B90A00054B5BD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
