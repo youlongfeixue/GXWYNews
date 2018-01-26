@@ -51,6 +51,8 @@
 		EAB395D2201A2C730054B5BD /* UIControl+Ignore.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB395D1201A2C730054B5BD /* UIControl+Ignore.m */; };
 		EAB395D8201A2CF20054B5BD /* UIView+Jump.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB395D7201A2CF20054B5BD /* UIView+Jump.m */; };
 		EAB395DB201A2D420054B5BD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB395DA201A2D420054B5BD /* UIView+Extension.m */; };
+		EAB395E4201B86EF0054B5BD /* WYNewsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB395E3201B86EF0054B5BD /* WYNewsListController.m */; };
+		EAB395E7201B87080054B5BD /* WYNewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB395E6201B87080054B5BD /* WYNewsDetailController.m */; };
 		F7E87F40F050473381666DA4 /* libPods-GXWYNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E2993B90FD2D91272E388E /* libPods-GXWYNews.a */; };
 /* End PBXBuildFile section */
 
@@ -149,6 +151,10 @@
 		EAB395D9201A2D420054B5BD /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Extension.h"; path = "GXWYNews/Tools/Additions/UIView+Extension.h"; sourceTree = SOURCE_ROOT; };
 		EAB395DA201A2D420054B5BD /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extension.m"; path = "GXWYNews/Tools/Additions/UIView+Extension.m"; sourceTree = SOURCE_ROOT; };
 		EAB395DF201A30990054B5BD /* WYPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYPrefixHeader.pch; sourceTree = "<group>"; };
+		EAB395E2201B86EF0054B5BD /* WYNewsListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYNewsListController.h; sourceTree = "<group>"; };
+		EAB395E3201B86EF0054B5BD /* WYNewsListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYNewsListController.m; sourceTree = "<group>"; };
+		EAB395E5201B87080054B5BD /* WYNewsDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYNewsDetailController.h; sourceTree = "<group>"; };
+		EAB395E6201B87080054B5BD /* WYNewsDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYNewsDetailController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +243,8 @@
 			children = (
 				EAB39558201A28D20054B5BD /* WYHomeViewController.h */,
 				EAB39557201A28D20054B5BD /* WYHomeViewController.m */,
+				EAB395E0201B86C30054B5BD /* NewsList */,
+				EAB395E1201B86CF0054B5BD /* NewsDetail */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -365,6 +373,24 @@
 				EAB395AC201A2BF90054B5BD /* GXBaseControl.h */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		EAB395E0201B86C30054B5BD /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				EAB395E2201B86EF0054B5BD /* WYNewsListController.h */,
+				EAB395E3201B86EF0054B5BD /* WYNewsListController.m */,
+			);
+			path = NewsList;
+			sourceTree = "<group>";
+		};
+		EAB395E1201B86CF0054B5BD /* NewsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EAB395E5201B87080054B5BD /* WYNewsDetailController.h */,
+				EAB395E6201B87080054B5BD /* WYNewsDetailController.m */,
+			);
+			path = NewsDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -504,6 +530,7 @@
 				EAB395C3201A2BF90054B5BD /* GXBaseTextView.m in Sources */,
 				EAB395CB201A2BF90054B5BD /* GXBaseTableViewCell.m in Sources */,
 				EAB395BC201A2BF90054B5BD /* NSNumber+GXAddition.m in Sources */,
+				EAB395E4201B86EF0054B5BD /* WYNewsListController.m in Sources */,
 				EAB395CE201A2BF90054B5BD /* GXBaseDatePicker.m in Sources */,
 				EAB395BB201A2BF90054B5BD /* NSFileManager+GXAddition.m in Sources */,
 				EAB3955D201A28D20054B5BD /* WYHomeViewController.m in Sources */,
@@ -526,6 +553,7 @@
 				EAB395D8201A2CF20054B5BD /* UIView+Jump.m in Sources */,
 				EAB395BE201A2BF90054B5BD /* NSArray+Log.m in Sources */,
 				EAB395C4201A2BF90054B5BD /* GXBaseScrollView.m in Sources */,
+				EAB395E7201B87080054B5BD /* WYNewsDetailController.m in Sources */,
 				EAB395BA201A2BF90054B5BD /* UIButton+GXAddition.m in Sources */,
 				EAB395B4201A2BF90054B5BD /* UIControl+GXAddition.m in Sources */,
 				EAB395CD201A2BF90054B5BD /* GXBaseNavigationController.m in Sources */,
