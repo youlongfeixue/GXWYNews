@@ -235,8 +235,8 @@
 		EAB39556201A28D20054B5BD /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				EAB39557201A28D20054B5BD /* WYHomeViewController.m */,
 				EAB39558201A28D20054B5BD /* WYHomeViewController.h */,
+				EAB39557201A28D20054B5BD /* WYHomeViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -244,8 +244,8 @@
 		EAB39559201A28D20054B5BD /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				EAB3955A201A28D20054B5BD /* WYMainTabBarController.m */,
 				EAB3955B201A28D20054B5BD /* WYMainTabBarController.h */,
+				EAB3955A201A28D20054B5BD /* WYMainTabBarController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";

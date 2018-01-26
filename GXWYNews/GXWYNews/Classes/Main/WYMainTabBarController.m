@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self addChildViewControllers];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +26,82 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+
+
+
+
+
+
+
+
+
+#pragma mark -  添加子控制器
+
+/// 添加所有的子控制器 
+- (void)addChildViewControllers {
+    // 视图控制器的字典数组
+    NSArray *arr = @[
+                     @{@"clsName": @"UIViewController", @"title": @"新闻", @"imageName": @"news"},
+                     @{@"clsName": @"UIViewController", @"title": @"阅读", @"imageName": @"reader"},
+                     @{@"clsName": @"UIViewController", @"title": @"视频", @"imageName": @"media"},
+                     @{@"clsName": @"UIViewController", @"title": @"话题", @"imageName": @"bar"},
+                     @{@"clsName": @"UIViewController", @"title": @"我", @"imageName": @"me"},
+                     ];
+    
+    NSMutableArray *vcsM = [NSMutableArray array];
+    for (NSDictionary *dict in arr) {
+        [vcsM addObject:[self childViewControllerWithDict:dict]];
+    }
+    
+    self.viewControllers = vcsM.copy;
 }
-*/
+
+
+/// 添加一个子控制器
+- (UIViewController *)childViewControllerWithDict:(NSDictionary *)dict {
+    
+    // 1. create vc
+    NSString *clsName = dict[@"clsName"];
+    Class cls = NSClassFromString(clsName);
+    
+    NSAssert(cls != nil, @"传入的控制器类名错误！");
+    UIViewController *vc = [cls new];
+    
+    // 2. set title
+    vc.title = dict[@"title"];
+    
+    // 3. set img 
+    NSString *imgName = [NSString stringWithFormat:@"tabbar_icon_%@_normal", dict[@"imageName"]];
+    vc.tabBarItem.image = [UIImage imageNamed:imgName];    
+    
+    NSString *imgNameHL = [NSString stringWithFormat:@"tabbar_icon_%@_highlight", dict[@"imageName"]];
+    vc.tabBarItem.selectedImage = [UIImage imageNamed:imgNameHL];  
+    
+    // 4. add nav vc
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    // 5. return vc
+    return nav;
+}
+
+
+
+
+
+
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
