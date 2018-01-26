@@ -24,6 +24,8 @@
     return _instance;
 }
 
+#pragma mark -  封装 AFN 网络请求
+
 
 
 
