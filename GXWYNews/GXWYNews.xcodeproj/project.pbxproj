@@ -53,6 +53,7 @@
 		EAB395DB201A2D420054B5BD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB395DA201A2D420054B5BD /* UIView+Extension.m */; };
 		EAB395E4201B86EF0054B5BD /* WYNewsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB395E3201B86EF0054B5BD /* WYNewsListController.m */; };
 		EAB395E7201B87080054B5BD /* WYNewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB395E6201B87080054B5BD /* WYNewsDetailController.m */; };
+		EAB395EE201B8DBD0054B5BD /* GXNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB395ED201B8DBD0054B5BD /* GXNetWorkManager.m */; };
 		F7E87F40F050473381666DA4 /* libPods-GXWYNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E2993B90FD2D91272E388E /* libPods-GXWYNews.a */; };
 /* End PBXBuildFile section */
 
@@ -155,6 +156,8 @@
 		EAB395E3201B86EF0054B5BD /* WYNewsListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYNewsListController.m; sourceTree = "<group>"; };
 		EAB395E5201B87080054B5BD /* WYNewsDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYNewsDetailController.h; sourceTree = "<group>"; };
 		EAB395E6201B87080054B5BD /* WYNewsDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYNewsDetailController.m; sourceTree = "<group>"; };
+		EAB395EC201B8DBD0054B5BD /* GXNetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXNetWorkManager.h; sourceTree = "<group>"; };
+		EAB395ED201B8DBD0054B5BD /* GXNetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXNetWorkManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +271,7 @@
 		EAB39560201A2BF90054B5BD /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				EAB395E8201B8D150054B5BD /* NetWork */,
 				EAB39561201A2BF90054B5BD /* Additions */,
 				EAB39591201A2BF90054B5BD /* Base */,
 			);
@@ -391,6 +395,15 @@
 				EAB395E6201B87080054B5BD /* WYNewsDetailController.m */,
 			);
 			path = NewsDetail;
+			sourceTree = "<group>";
+		};
+		EAB395E8201B8D150054B5BD /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				EAB395EC201B8DBD0054B5BD /* GXNetWorkManager.h */,
+				EAB395ED201B8DBD0054B5BD /* GXNetWorkManager.m */,
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -544,6 +557,7 @@
 				EAB395C7201A2BF90054B5BD /* GXBaseView.m in Sources */,
 				EAB395AE201A2BF90054B5BD /* UIColor+GXAddition.m in Sources */,
 				EAB395CA201A2BF90054B5BD /* GXGenericity.m in Sources */,
+				EAB395EE201B8DBD0054B5BD /* GXNetWorkManager.m in Sources */,
 				EAB395DB201A2D420054B5BD /* UIView+Extension.m in Sources */,
 				EAB39536201A26210054B5BD /* AppDelegate.m in Sources */,
 				EAB395B1201A2BF90054B5BD /* NSURLSession+GXAddition.m in Sources */,
