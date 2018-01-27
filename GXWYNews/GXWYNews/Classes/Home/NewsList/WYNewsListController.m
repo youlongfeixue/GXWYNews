@@ -8,6 +8,8 @@
 
 #import "WYNewsListController.h"
 #import "WYNewsListItem.h"
+#import "WYNewsNormalCell.h"
+#import <UIImageView+WebCache.h>
 
 
 static NSString *const cellID = @"cellID";
@@ -36,7 +38,7 @@ static NSString *const cellID = @"cellID";
 - (void)loadData {
     // T1348649079062  体育频道
     [[GXNetWorkManager sharedManager] newsListWithChannel:@"T1348649079062" start:0 completion:^(NSArray *list, NSError *error) {
-        NSLog(@"%@", list);
+//        NSLog(@"%@", list);
         
         _newsList = [NSMutableArray arrayWithArray:[NSArray yy_modelArrayWithClass:[WYNewsListItem class] json:list]];
 
@@ -54,9 +56,15 @@ static NSString *const cellID = @"cellID";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
+    WYNewsNormalCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
     
-    cell.textLabel.text = _newsList[indexPath.row].title;
+//    cell.textLabel.text = _newsList[indexPath.row].title;
+    WYNewsListItem *model = _newsList[indexPath.row];
+    cell.lblTitle.text = model.title;
+    cell.lblSource.text = model.source;
+    cell.lblReply.text = @(model.replyCount).description;
+    
+    [cell.iconView sd_setImageWithURL:[NSURL URLWithString:model.imgsrc]]; 
     
     return cell;
 }
@@ -77,7 +85,11 @@ static NSString *const cellID = @"cellID";
     tv.dataSource = self;
     tv.delegate = self;
     
-    [tv registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
+//    [tv registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
+    [tv registerNib:[UINib nibWithNibName:@"WYNewsNormalCell" bundle:nil] forCellReuseIdentifier:cellID];
+    
+    tv.estimatedRowHeight = 100;
+    tv.rowHeight = UITableViewAutomaticDimension;
 }
 
 
