@@ -68,12 +68,14 @@
                     <constraint firstItem="ad0-2e-ZiY" firstAttribute="leading" secondItem="LPj-kG-8jc" secondAttribute="trailing" constant="10" id="tVX-pU-l9X"/>
                     <constraint firstItem="LPj-kG-8jc" firstAttribute="top" secondItem="xOy-Os-pBF" secondAttribute="top" id="vU6-Jk-DXL"/>
                     <constraint firstAttribute="trailing" secondItem="ad0-2e-ZiY" secondAttribute="trailing" constant="10" id="yoS-HA-4Sm"/>
+                    <constraint firstAttribute="bottom" secondItem="ggo-8Y-lUT" secondAttribute="bottom" constant="10" id="zSE-gr-YFh"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
                 <outlet property="iconView" destination="xOy-Os-pBF" id="xpH-vG-K6c"/>
                 <outlet property="lblReply" destination="ggo-8Y-lUT" id="Bfv-ec-v6r"/>
+                <outlet property="lblSource" destination="sxV-4Y-CJ2" id="FeG-QS-RfR"/>
                 <outlet property="lblTitle" destination="bkH-Bb-Oi3" id="YlZ-z5-pMF"/>
                 <outletCollection property="extralIcon" destination="LPj-kG-8jc" id="VyC-Ve-KsN"/>
                 <outletCollection property="extralIcon" destination="ad0-2e-ZiY" id="Upy-FP-EaN"/>
