@@ -23,8 +23,8 @@
                         <rect key="frame" x="10" y="8" width="100" height="76"/>
                         <color key="backgroundColor" red="0.91101723909378052" green="0.6970287561416626" blue="0.39252030849456787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="76" id="PU2-3F-wBp"/>
-                            <constraint firstAttribute="width" constant="100" id="fCB-a5-7Qv"/>
+                            <constraint firstAttribute="width" constant="100" id="KzY-rW-EH7"/>
+                            <constraint firstAttribute="height" constant="76" id="gfU-Ck-i4r"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGz-y3-hFL">
@@ -47,15 +47,16 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="Age-Ce-EGF" secondAttribute="trailing" constant="8" id="1C1-7K-T9M"/>
-                    <constraint firstItem="HrJ-Jn-g6i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Cia-mb-PPJ"/>
-                    <constraint firstItem="caQ-gr-T5Q" firstAttribute="bottom" secondItem="HrJ-Jn-g6i" secondAttribute="bottom" id="KAk-IC-CBc"/>
-                    <constraint firstItem="caQ-gr-T5Q" firstAttribute="leading" secondItem="mGz-y3-hFL" secondAttribute="leading" id="M5J-wW-RKs"/>
-                    <constraint firstItem="mGz-y3-hFL" firstAttribute="top" secondItem="HrJ-Jn-g6i" secondAttribute="top" id="Qid-3c-DJj"/>
-                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mGz-y3-hFL" secondAttribute="trailing" constant="10" id="Ska-LJ-J8D"/>
-                    <constraint firstItem="mGz-y3-hFL" firstAttribute="leading" secondItem="HrJ-Jn-g6i" secondAttribute="trailing" constant="13" id="aGW-Kb-wEf"/>
-                    <constraint firstItem="HrJ-Jn-g6i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="rNw-77-uhr"/>
-                    <constraint firstItem="Age-Ce-EGF" firstAttribute="bottom" secondItem="caQ-gr-T5Q" secondAttribute="bottom" id="v4u-ly-dis"/>
+                    <constraint firstItem="mGz-y3-hFL" firstAttribute="top" secondItem="HrJ-Jn-g6i" secondAttribute="top" id="15L-sQ-37J"/>
+                    <constraint firstItem="mGz-y3-hFL" firstAttribute="leading" secondItem="HrJ-Jn-g6i" secondAttribute="trailing" constant="13" id="2PI-WJ-m6r"/>
+                    <constraint firstItem="HrJ-Jn-g6i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Epw-48-CVz"/>
+                    <constraint firstAttribute="trailing" secondItem="Age-Ce-EGF" secondAttribute="trailing" constant="8" id="Ev1-Sr-fNo"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mGz-y3-hFL" secondAttribute="trailing" constant="10" id="HwE-YU-Cya"/>
+                    <constraint firstItem="HrJ-Jn-g6i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Qw1-jK-NfE"/>
+                    <constraint firstItem="caQ-gr-T5Q" firstAttribute="leading" secondItem="HrJ-Jn-g6i" secondAttribute="trailing" constant="13" id="Y0D-BI-fOJ"/>
+                    <constraint firstItem="caQ-gr-T5Q" firstAttribute="bottom" secondItem="HrJ-Jn-g6i" secondAttribute="bottom" id="aNb-ox-6RA"/>
+                    <constraint firstItem="Age-Ce-EGF" firstAttribute="bottom" secondItem="caQ-gr-T5Q" secondAttribute="bottom" id="biP-SE-hiQ"/>
+                    <constraint firstAttribute="bottom" secondItem="HrJ-Jn-g6i" secondAttribute="bottom" constant="8.5" id="zGT-L1-d0v"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
@@ -65,7 +66,7 @@
                 <outlet property="lblSource" destination="caQ-gr-T5Q" id="XeZ-XE-cfO"/>
                 <outlet property="lblTitle" destination="mGz-y3-hFL" id="UI6-CP-VvY"/>
             </connections>
-            <point key="canvasLocation" x="-78" y="34"/>
+            <point key="canvasLocation" x="-78" y="33.5"/>
         </tableViewCell>
     </objects>
 </document>
