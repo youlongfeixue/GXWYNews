@@ -12,7 +12,8 @@
 #import <masonry.h>
 #import <NSObject+YYModel.h>
 #import "GXAdditions.h"
-
+#import "GXNetWorkManager.h"
+#import "GXNetWorkManager+WYCategory.h"
 
 #endif
 

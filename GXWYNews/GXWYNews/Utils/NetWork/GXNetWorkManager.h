@@ -12,6 +12,7 @@
 
 + (instancetype)sharedManager;
 
+
 #pragma mark -  封装 AFN 网络请求
 
 #pragma mark -  GET

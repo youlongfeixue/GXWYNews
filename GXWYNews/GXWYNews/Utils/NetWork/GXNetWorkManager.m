@@ -8,6 +8,12 @@
 
 #import "GXNetWorkManager.h"
 
+@interface GXNetWorkManager ()
+
+
+@end
+
+
 @implementation GXNetWorkManager
 
 + (instancetype)sharedManager {
@@ -20,9 +26,14 @@
         NSURL *baseUrl = [NSURL URLWithString:@"http://c.m.163.com/nc/article/"];
         
         _instance = [[self alloc] initWithBaseURL:baseUrl];
+        _instance.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", nil];
     });
     return _instance;
 }
+
+
+
+
 
 #pragma mark -  封装 AFN 网络请求
 

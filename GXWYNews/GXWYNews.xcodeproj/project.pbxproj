@@ -54,7 +54,7 @@
 		EAB39669201B90450054B5BD /* GXBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB3963F201B90450054B5BD /* GXBaseNavigationController.m */; };
 		EAB3966A201B90450054B5BD /* GXBaseDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB39641201B90450054B5BD /* GXBaseDatePicker.m */; };
 		EAB3966B201B90450054B5BD /* GXBaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB39643201B90450054B5BD /* GXBaseLabel.m */; };
-		EAB39672201B90F00054B5BD /* GXNetWorkManager+WYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB39671201B90F00054B5BD /* GXNetWorkManager+WYCategory.m */; };
+		EAB39678201CA4270054B5BD /* GXNetWorkManager+WYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB39677201CA4270054B5BD /* GXNetWorkManager+WYCategory.m */; };
 		F7E87F40F050473381666DA4 /* libPods-GXWYNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E2993B90FD2D91272E388E /* libPods-GXWYNews.a */; };
 /* End PBXBuildFile section */
 
@@ -159,8 +159,8 @@
 		EAB39642201B90450054B5BD /* GXBaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXBaseButton.h; sourceTree = "<group>"; };
 		EAB39643201B90450054B5BD /* GXBaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXBaseLabel.m; sourceTree = "<group>"; };
 		EAB39644201B90450054B5BD /* GXBaseControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXBaseControl.h; sourceTree = "<group>"; };
-		EAB39670201B90F00054B5BD /* GXNetWorkManager+WYCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GXNetWorkManager+WYCategory.h"; sourceTree = "<group>"; };
-		EAB39671201B90F00054B5BD /* GXNetWorkManager+WYCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GXNetWorkManager+WYCategory.m"; sourceTree = "<group>"; };
+		EAB39676201CA4270054B5BD /* GXNetWorkManager+WYCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GXNetWorkManager+WYCategory.h"; sourceTree = "<group>"; };
+		EAB39677201CA4270054B5BD /* GXNetWorkManager+WYCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GXNetWorkManager+WYCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -413,8 +413,8 @@
 		EAB3966F201B90BE0054B5BD /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				EAB39670201B90F00054B5BD /* GXNetWorkManager+WYCategory.h */,
-				EAB39671201B90F00054B5BD /* GXNetWorkManager+WYCategory.m */,
+				EAB39676201CA4270054B5BD /* GXNetWorkManager+WYCategory.h */,
+				EAB39677201CA4270054B5BD /* GXNetWorkManager+WYCategory.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -551,7 +551,7 @@
 				EAB395E4201B86EF0054B5BD /* WYNewsListController.m in Sources */,
 				EAB39660201B90450054B5BD /* GXBaseScrollView.m in Sources */,
 				EAB39656201B90450054B5BD /* UIControl+Ignore.m in Sources */,
-				EAB39672201B90F00054B5BD /* GXNetWorkManager+WYCategory.m in Sources */,
+				EAB39678201CA4270054B5BD /* GXNetWorkManager+WYCategory.m in Sources */,
 				EAB3964C201B90450054B5BD /* UIControl+GXAddition.m in Sources */,
 				EAB39646201B90450054B5BD /* UIColor+GXAddition.m in Sources */,
 				EAB39652201B90450054B5BD /* NSDate+GBSAddition.m in Sources */,

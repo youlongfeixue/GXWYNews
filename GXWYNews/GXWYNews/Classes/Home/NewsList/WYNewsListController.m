@@ -7,6 +7,7 @@
 //
 
 #import "WYNewsListController.h"
+#import "NSArray+Log.h"
 
 
 static NSString *const cellID = @"cellID";
@@ -24,7 +25,18 @@ static NSString *const cellID = @"cellID";
     // Do any additional setup after loading the view.
     
     [self setupUI];
+    [self loadData];
 }
+
+#pragma mark -  loadData
+
+- (void)loadData {
+    // T1348649079062  体育频道
+    [[GXNetWorkManager sharedManager] newListWithChannel:@"T1348649079062" start:0 completion:^(NSArray *list, NSError *error) {
+        NSLog(@"list = %@", list);
+    }];
+}
+
 
 
 #pragma mark -  tableView dataSource & delegate

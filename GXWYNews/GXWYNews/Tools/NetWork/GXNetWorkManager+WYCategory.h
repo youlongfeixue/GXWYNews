@@ -10,4 +10,28 @@
 
 @interface GXNetWorkManager (WYCategory)
 
+- (void)newListWithChannel:(NSString *)channel start:(NSInteger)start completion:(void (^)(NSArray *list, NSError *error))completion;
+
+
+
+
+
+
+
+
+
+
+
+
 @end
+
+
+
+
+
+
+
+
+
+
+
