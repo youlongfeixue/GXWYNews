@@ -68,6 +68,17 @@ static NSString *const cellID = @"cellID";
     
     [cell.iconView sd_setImageWithURL:[NSURL URLWithString:model.imgsrc]]; 
     
+//    for (int i = 0; i < model.imgextra.count; i++) {
+//        NSURL *url = [NSURL URLWithString:model.imgextra[i][@"imgsrc"]];
+//    }
+    
+    int idx = 0;
+    for (NSDictionary *dict in model.imgextra) {
+        NSURL *url = [NSURL URLWithString:dict[@"imgsrc"]];
+        
+        [cell.extralIcon[idx++] sd_setImageWithURL:url];
+    }
+    
     return cell;
 }
 
