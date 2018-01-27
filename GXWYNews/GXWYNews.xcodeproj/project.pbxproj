@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EAA56B91201CBB7D00E7A95C /* WYNewsListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA56B90201CBB7D00E7A95C /* WYNewsListItem.m */; };
+		EAA56B96201CBE7900E7A95C /* WYNewsNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA56B94201CBE7900E7A95C /* WYNewsNormalCell.m */; };
+		EAA56B97201CBE7900E7A95C /* WYNewsNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA56B95201CBE7900E7A95C /* WYNewsNormalCell.xib */; };
 		EAB39536201A26210054B5BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB39535201A26210054B5BD /* AppDelegate.m */; };
 		EAB3953E201A26210054B5BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB3953D201A26210054B5BD /* Assets.xcassets */; };
 		EAB39541201A26210054B5BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB3953F201A26210054B5BD /* LaunchScreen.storyboard */; };
@@ -65,6 +67,9 @@
 		E9DBB0ECCE5069E2362D4DB6 /* Pods-GXWYNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXWYNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GXWYNews/Pods-GXWYNews.debug.xcconfig"; sourceTree = "<group>"; };
 		EAA56B8F201CBB7D00E7A95C /* WYNewsListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYNewsListItem.h; sourceTree = "<group>"; };
 		EAA56B90201CBB7D00E7A95C /* WYNewsListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYNewsListItem.m; sourceTree = "<group>"; };
+		EAA56B93201CBE7900E7A95C /* WYNewsNormalCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYNewsNormalCell.h; sourceTree = "<group>"; };
+		EAA56B94201CBE7900E7A95C /* WYNewsNormalCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYNewsNormalCell.m; sourceTree = "<group>"; };
+		EAA56B95201CBE7900E7A95C /* WYNewsNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYNewsNormalCell.xib; sourceTree = "<group>"; };
 		EAB39531201A26210054B5BD /* GXWYNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GXWYNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB39534201A26210054B5BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EAB39535201A26210054B5BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -204,6 +209,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		EAA56B92201CBE3900E7A95C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAA56B93201CBE7900E7A95C /* WYNewsNormalCell.h */,
+				EAA56B94201CBE7900E7A95C /* WYNewsNormalCell.m */,
+				EAA56B95201CBE7900E7A95C /* WYNewsNormalCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EAB39528201A26210054B5BD = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +297,7 @@
 				EAB395E2201B86EF0054B5BD /* WYNewsListController.h */,
 				EAB395E3201B86EF0054B5BD /* WYNewsListController.m */,
 				EAA56B8E201CBB5800E7A95C /* Model */,
+				EAA56B92201CBE3900E7A95C /* View */,
 			);
 			path = NewsList;
 			sourceTree = "<group>";
@@ -494,6 +510,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA56B97201CBE7900E7A95C /* WYNewsNormalCell.xib in Resources */,
 				EAB39541201A26210054B5BD /* LaunchScreen.storyboard in Resources */,
 				EAB3953E201A26210054B5BD /* Assets.xcassets in Resources */,
 			);
@@ -560,6 +577,7 @@
 				EAB3955E201A28D20054B5BD /* WYMainTabBarController.m in Sources */,
 				EAB39661201B90450054B5BD /* GXBaseTextField.m in Sources */,
 				EAB39662201B90450054B5BD /* GXBaseViewController.m in Sources */,
+				EAA56B96201CBE7900E7A95C /* WYNewsNormalCell.m in Sources */,
 				EAB3964F201B90450054B5BD /* UINavigationController+GXAddition.m in Sources */,
 				EAB395E4201B86EF0054B5BD /* WYNewsListController.m in Sources */,
 				EAB39660201B90450054B5BD /* GXBaseScrollView.m in Sources */,
