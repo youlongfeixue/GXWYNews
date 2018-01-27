@@ -10,7 +10,7 @@
 
 @implementation GXNetWorkManager (WYCategory)
 
-- (void)newListWithChannel:(NSString *)channel start:(NSInteger)start completion:(void (^)(NSArray *list, NSError *error))completion
+- (void)newsListWithChannel:(NSString *)channel start:(NSInteger)start completion:(void (^)(NSArray *list, NSError *error))completion
 {
     NSString *urlStr = [NSString stringWithFormat:@"list/%@/%zd-20.html", channel, start];
     [self GET:urlStr parameters:nil completion:^(id json, NSError *error) {

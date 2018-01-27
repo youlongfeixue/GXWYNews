@@ -7,6 +7,7 @@
 //
 
 #import "WYNewsListController.h"
+#import "WYNewsListItem.h"
 
 
 static NSString *const cellID = @"cellID";
@@ -14,6 +15,9 @@ static NSString *const cellID = @"cellID";
 @interface WYNewsListController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, weak) UITableView *tableView;
+
+/// 新闻列表数据源 使用 mArr 是为了方便上拉刷新与下拉加载更多
+@property (nonatomic, strong) NSMutableArray<WYNewsListItem *> *newsList;
 
 @end
 
@@ -31,9 +35,13 @@ static NSString *const cellID = @"cellID";
 
 - (void)loadData {
     // T1348649079062  体育频道
-    [[GXNetWorkManager sharedManager] newListWithChannel:@"T1348649079062" start:0 completion:^(NSArray *list, NSError *error) {
+    [[GXNetWorkManager sharedManager] newsListWithChannel:@"T1348649079062" start:0 completion:^(NSArray *list, NSError *error) {
         NSLog(@"%@", list);
+        
+        _newsList = [NSMutableArray arrayWithArray:[NSArray yy_modelArrayWithClass:[WYNewsListItem class] json:list]];
 
+        // 刷新列表
+        [self.tableView reloadData];
     }];
 }
 
@@ -42,13 +50,13 @@ static NSString *const cellID = @"cellID";
 #pragma mark -  tableView dataSource & delegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return _newsList.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
     
-    cell.textLabel.text = @(indexPath.row).description;
+    cell.textLabel.text = _newsList[indexPath.row].title;
     
     return cell;
 }

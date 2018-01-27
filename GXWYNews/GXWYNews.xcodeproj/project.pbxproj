@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EAA56B91201CBB7D00E7A95C /* WYNewsListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA56B90201CBB7D00E7A95C /* WYNewsListItem.m */; };
 		EAB39536201A26210054B5BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB39535201A26210054B5BD /* AppDelegate.m */; };
 		EAB3953E201A26210054B5BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB3953D201A26210054B5BD /* Assets.xcassets */; };
 		EAB39541201A26210054B5BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB3953F201A26210054B5BD /* LaunchScreen.storyboard */; };
@@ -62,6 +63,8 @@
 		74E2993B90FD2D91272E388E /* libPods-GXWYNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GXWYNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3725BAB7DCC142409642F21 /* Pods-GXWYNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXWYNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-GXWYNews/Pods-GXWYNews.release.xcconfig"; sourceTree = "<group>"; };
 		E9DBB0ECCE5069E2362D4DB6 /* Pods-GXWYNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXWYNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GXWYNews/Pods-GXWYNews.debug.xcconfig"; sourceTree = "<group>"; };
+		EAA56B8F201CBB7D00E7A95C /* WYNewsListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYNewsListItem.h; sourceTree = "<group>"; };
+		EAA56B90201CBB7D00E7A95C /* WYNewsListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYNewsListItem.m; sourceTree = "<group>"; };
 		EAB39531201A26210054B5BD /* GXWYNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GXWYNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB39534201A26210054B5BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EAB39535201A26210054B5BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -192,6 +195,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EAA56B8E201CBB5800E7A95C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAA56B8F201CBB7D00E7A95C /* WYNewsListItem.h */,
+				EAA56B90201CBB7D00E7A95C /* WYNewsListItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EAB39528201A26210054B5BD = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +281,7 @@
 			children = (
 				EAB395E2201B86EF0054B5BD /* WYNewsListController.h */,
 				EAB395E3201B86EF0054B5BD /* WYNewsListController.m */,
+				EAA56B8E201CBB5800E7A95C /* Model */,
 			);
 			path = NewsList;
 			sourceTree = "<group>";
@@ -295,6 +308,7 @@
 		EAB395F0201B90450054B5BD /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				EAB39618201B90450054B5BD /* Log */,
 				EAB395F1201B90450054B5BD /* NSFileHandle+Addition.m */,
 				EAB395F2201B90450054B5BD /* UIButton+GXAddition.h */,
 				EAB395F3201B90450054B5BD /* NSDate+GBSAddition.h */,
@@ -334,7 +348,6 @@
 				EAB39615201B90450054B5BD /* UIScrollView+GXAddition.h */,
 				EAB39616201B90450054B5BD /* UILabel+GXAddition.h */,
 				EAB39617201B90450054B5BD /* NSURLSession+GXAddition.h */,
-				EAB39618201B90450054B5BD /* Log */,
 				EAB3961B201B90450054B5BD /* NSMutableArray+Helper.h */,
 				EAB3961C201B90450054B5BD /* NSArray+Addition.h */,
 				EAB3961D201B90450054B5BD /* UINavigationController+GXAddition.h */,
@@ -561,6 +574,7 @@
 				EAB39669201B90450054B5BD /* GXBaseNavigationController.m in Sources */,
 				EAB3964E201B90450054B5BD /* NSArray+Addition.m in Sources */,
 				EAB3965B201B90450054B5BD /* UIView+Extension.m in Sources */,
+				EAA56B91201CBB7D00E7A95C /* WYNewsListItem.m in Sources */,
 				EAB3955D201A28D20054B5BD /* WYHomeViewController.m in Sources */,
 				EAB39655201B90450054B5BD /* NSNumber+GXAddition.m in Sources */,
 				EAB39649201B90450054B5BD /* NSURLSession+GXAddition.m in Sources */,
