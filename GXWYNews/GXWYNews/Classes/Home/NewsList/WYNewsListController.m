@@ -7,9 +7,10 @@
 //
 
 #import "WYNewsListController.h"
+#import <UIImageView+WebCache.h>
 #import "WYNewsListItem.h"
 #import "WYNewsNormalCell.h"
-#import <UIImageView+WebCache.h>
+#import "WYNewsExstraImagesCell.h"
 
 
 static NSString *const cellID = @"cellID";
@@ -56,7 +57,8 @@ static NSString *const cellID = @"cellID";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    WYNewsNormalCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
+//    WYNewsNormalCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
+    WYNewsExstraImagesCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
     
 //    cell.textLabel.text = _newsList[indexPath.row].title;
     WYNewsListItem *model = _newsList[indexPath.row];
@@ -86,7 +88,8 @@ static NSString *const cellID = @"cellID";
     tv.delegate = self;
     
 //    [tv registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
-    [tv registerNib:[UINib nibWithNibName:@"WYNewsNormalCell" bundle:nil] forCellReuseIdentifier:cellID];
+//    [tv registerNib:[UINib nibWithNibName:@"WYNewsNormalCell" bundle:nil] forCellReuseIdentifier:cellID];
+    [tv registerNib:[UINib nibWithNibName:@"WYNewsExstraImagesCell" bundle:nil] forCellReuseIdentifier:cellID];
     
     tv.estimatedRowHeight = 100;
     tv.rowHeight = UITableViewAutomaticDimension;
