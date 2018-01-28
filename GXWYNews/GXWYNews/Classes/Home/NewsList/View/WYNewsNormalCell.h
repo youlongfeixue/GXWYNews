@@ -6,9 +6,9 @@
 //  Copyright © 2018年 Tony. All rights reserved.
 //
 
-#import "GXBaseTableViewCell.h"
+#import "WYBaseNewsListCell.h"
 
-@interface WYNewsNormalCell : GXBaseTableViewCell
+@interface WYNewsNormalCell : WYBaseNewsListCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *iconView;
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;

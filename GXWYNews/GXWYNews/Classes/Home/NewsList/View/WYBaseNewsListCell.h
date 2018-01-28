@@ -1,14 +1,14 @@
 //
-//  WYNewsExstraImagesCell.h
+//  WYBaseNewsListCell.h
 //  GXWYNews
 //
-//  Created by Tony on 2018/1/27.
+//  Created by Tony on 2018/1/28.
 //  Copyright © 2018年 Tony. All rights reserved.
 //
 
-#import "WYBaseNewsListCell.h"
+#import "GXBaseTableViewCell.h"
 
-@interface WYNewsExstraImagesCell : WYBaseNewsListCell
+@interface WYBaseNewsListCell : GXBaseTableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *iconView;
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;

@@ -11,9 +11,11 @@
 #import "WYNewsListItem.h"
 #import "WYNewsNormalCell.h"
 #import "WYNewsExstraImagesCell.h"
+#import "WYBaseNewsListCell.h"
 
 
-static NSString *const cellID = @"cellID";
+static NSString *const normalCellID = @"normalCellID";
+static NSString *const extraCellID = @"extraCellID";
 
 @interface WYNewsListController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -56,22 +58,25 @@ static NSString *const cellID = @"cellID";
     return _newsList.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    WYNewsNormalCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
-    WYNewsExstraImagesCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
-    
-//    cell.textLabel.text = _newsList[indexPath.row].title;
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 
+{
     WYNewsListItem *model = _newsList[indexPath.row];
+    
+    NSString *cellID = nil;
+    if (model.imgextra.count > 0) {
+        cellID = extraCellID;
+    } else {
+        cellID = normalCellID;
+    }
+    
+    WYBaseNewsListCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
+    
     cell.lblTitle.text = model.title;
     cell.lblSource.text = model.source;
     cell.lblReply.text = @(model.replyCount).description;
     
     [cell.iconView sd_setImageWithURL:[NSURL URLWithString:model.imgsrc]]; 
-    
-//    for (int i = 0; i < model.imgextra.count; i++) {
-//        NSURL *url = [NSURL URLWithString:model.imgextra[i][@"imgsrc"]];
-//    }
-    
+
     int idx = 0;
     for (NSDictionary *dict in model.imgextra) {
         NSURL *url = [NSURL URLWithString:dict[@"imgsrc"]];
@@ -98,9 +103,8 @@ static NSString *const cellID = @"cellID";
     tv.dataSource = self;
     tv.delegate = self;
     
-//    [tv registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
-//    [tv registerNib:[UINib nibWithNibName:@"WYNewsNormalCell" bundle:nil] forCellReuseIdentifier:cellID];
-    [tv registerNib:[UINib nibWithNibName:@"WYNewsExstraImagesCell" bundle:nil] forCellReuseIdentifier:cellID];
+    [tv registerNib:[UINib nibWithNibName:@"WYNewsNormalCell" bundle:nil] forCellReuseIdentifier:normalCellID];
+    [tv registerNib:[UINib nibWithNibName:@"WYNewsExstraImagesCell" bundle:nil] forCellReuseIdentifier:extraCellID];
     
     tv.estimatedRowHeight = 100;
     tv.rowHeight = UITableViewAutomaticDimension;
