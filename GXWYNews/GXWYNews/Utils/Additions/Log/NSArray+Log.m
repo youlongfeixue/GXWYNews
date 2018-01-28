@@ -39,8 +39,6 @@
 }
 
 
-
-
 @end
 
 @implementation NSDictionary (Log)
