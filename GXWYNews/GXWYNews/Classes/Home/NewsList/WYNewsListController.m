@@ -9,8 +9,6 @@
 #import "WYNewsListController.h"
 #import <UIImageView+WebCache.h>
 #import "WYNewsListItem.h"
-#import "WYNewsNormalCell.h"
-#import "WYNewsExstraImagesCell.h"
 #import "WYBaseNewsListCell.h"
 
 

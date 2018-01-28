@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EAA56B91201CBB7D00E7A95C /* WYNewsListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA56B90201CBB7D00E7A95C /* WYNewsListItem.m */; };
-		EAA56B96201CBE7900E7A95C /* WYNewsNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA56B94201CBE7900E7A95C /* WYNewsNormalCell.m */; };
 		EAA56B97201CBE7900E7A95C /* WYNewsNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA56B95201CBE7900E7A95C /* WYNewsNormalCell.xib */; };
-		EAA56B9B201CC85F00E7A95C /* WYNewsExstraImagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA56B99201CC85F00E7A95C /* WYNewsExstraImagesCell.m */; };
 		EAA56B9C201CC85F00E7A95C /* WYNewsExstraImagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA56B9A201CC85F00E7A95C /* WYNewsExstraImagesCell.xib */; };
 		EAA56B9F201D633600E7A95C /* WYBaseNewsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA56B9E201D633600E7A95C /* WYBaseNewsListCell.m */; };
 		EAB39536201A26210054B5BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB39535201A26210054B5BD /* AppDelegate.m */; };
@@ -70,11 +68,7 @@
 		E9DBB0ECCE5069E2362D4DB6 /* Pods-GXWYNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXWYNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GXWYNews/Pods-GXWYNews.debug.xcconfig"; sourceTree = "<group>"; };
 		EAA56B8F201CBB7D00E7A95C /* WYNewsListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYNewsListItem.h; sourceTree = "<group>"; };
 		EAA56B90201CBB7D00E7A95C /* WYNewsListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYNewsListItem.m; sourceTree = "<group>"; };
-		EAA56B93201CBE7900E7A95C /* WYNewsNormalCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYNewsNormalCell.h; sourceTree = "<group>"; };
-		EAA56B94201CBE7900E7A95C /* WYNewsNormalCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYNewsNormalCell.m; sourceTree = "<group>"; };
 		EAA56B95201CBE7900E7A95C /* WYNewsNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYNewsNormalCell.xib; sourceTree = "<group>"; };
-		EAA56B98201CC85F00E7A95C /* WYNewsExstraImagesCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYNewsExstraImagesCell.h; sourceTree = "<group>"; };
-		EAA56B99201CC85F00E7A95C /* WYNewsExstraImagesCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYNewsExstraImagesCell.m; sourceTree = "<group>"; };
 		EAA56B9A201CC85F00E7A95C /* WYNewsExstraImagesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYNewsExstraImagesCell.xib; sourceTree = "<group>"; };
 		EAA56B9D201D633600E7A95C /* WYBaseNewsListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYBaseNewsListCell.h; sourceTree = "<group>"; };
 		EAA56B9E201D633600E7A95C /* WYBaseNewsListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYBaseNewsListCell.m; sourceTree = "<group>"; };
@@ -222,11 +216,7 @@
 			children = (
 				EAA56B9D201D633600E7A95C /* WYBaseNewsListCell.h */,
 				EAA56B9E201D633600E7A95C /* WYBaseNewsListCell.m */,
-				EAA56B93201CBE7900E7A95C /* WYNewsNormalCell.h */,
-				EAA56B94201CBE7900E7A95C /* WYNewsNormalCell.m */,
 				EAA56B95201CBE7900E7A95C /* WYNewsNormalCell.xib */,
-				EAA56B98201CC85F00E7A95C /* WYNewsExstraImagesCell.h */,
-				EAA56B99201CC85F00E7A95C /* WYNewsExstraImagesCell.m */,
 				EAA56B9A201CC85F00E7A95C /* WYNewsExstraImagesCell.xib */,
 			);
 			path = View;
@@ -592,7 +582,6 @@
 				EAB39661201B90450054B5BD /* GXBaseTextField.m in Sources */,
 				EAB39662201B90450054B5BD /* GXBaseViewController.m in Sources */,
 				EAA56B9F201D633600E7A95C /* WYBaseNewsListCell.m in Sources */,
-				EAA56B96201CBE7900E7A95C /* WYNewsNormalCell.m in Sources */,
 				EAB3964F201B90450054B5BD /* UINavigationController+GXAddition.m in Sources */,
 				EAB395E4201B86EF0054B5BD /* WYNewsListController.m in Sources */,
 				EAB39660201B90450054B5BD /* GXBaseScrollView.m in Sources */,
@@ -607,7 +596,6 @@
 				EAB39669201B90450054B5BD /* GXBaseNavigationController.m in Sources */,
 				EAB3964E201B90450054B5BD /* NSArray+Addition.m in Sources */,
 				EAB3965B201B90450054B5BD /* UIView+Extension.m in Sources */,
-				EAA56B9B201CC85F00E7A95C /* WYNewsExstraImagesCell.m in Sources */,
 				EAA56B91201CBB7D00E7A95C /* WYNewsListItem.m in Sources */,
 				EAB3955D201A28D20054B5BD /* WYHomeViewController.m in Sources */,
 				EAB39655201B90450054B5BD /* NSNumber+GXAddition.m in Sources */,
