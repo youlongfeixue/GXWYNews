@@ -14,6 +14,7 @@
 
 static NSString *const normalCellID = @"normalCellID";
 static NSString *const extraCellID = @"extraCellID";
+static NSString *const bigImageCellID = @"bigImageCellID";
 
 @interface WYNewsListController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -39,7 +40,7 @@ static NSString *const extraCellID = @"extraCellID";
 - (void)loadData {
     // T1348649079062  体育频道
     [[GXNetWorkManager sharedManager] newsListWithChannel:@"T1348649079062" start:0 completion:^(NSArray *list, NSError *error) {
-//        NSLog(@"%@", list);
+        NSLog(@"%@", list);
         
         _newsList = [NSMutableArray arrayWithArray:[NSArray yy_modelArrayWithClass:[WYNewsListItem class] json:list]];
 
@@ -61,7 +62,9 @@ static NSString *const extraCellID = @"extraCellID";
     WYNewsListItem *model = _newsList[indexPath.row];
     
     NSString *cellID = nil;
-    if (model.imgextra.count > 0) {
+    if (model.imgType == 1) {
+        cellID = bigImageCellID;
+    }else if (model.imgextra.count > 0) {
         cellID = extraCellID;
     } else {
         cellID = normalCellID;
@@ -103,6 +106,7 @@ static NSString *const extraCellID = @"extraCellID";
     
     [tv registerNib:[UINib nibWithNibName:@"WYNewsNormalCell" bundle:nil] forCellReuseIdentifier:normalCellID];
     [tv registerNib:[UINib nibWithNibName:@"WYNewsExstraImagesCell" bundle:nil] forCellReuseIdentifier:extraCellID];
+    [tv registerNib:[UINib nibWithNibName:@"WYNewsBigImageCell" bundle:nil] forCellReuseIdentifier:bigImageCellID];
     
     tv.estimatedRowHeight = 100;
     tv.rowHeight = UITableViewAutomaticDimension;
