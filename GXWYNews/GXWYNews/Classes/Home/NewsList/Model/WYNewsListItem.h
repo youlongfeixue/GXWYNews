@@ -40,7 +40,8 @@
 /// 是否大图标记
 @property (nonatomic, assign) BOOL imgType;
 
-
+/// 是否顶部 header（Cell）
+@property (nonatomic, assign) BOOL hasHead;
 
 
 

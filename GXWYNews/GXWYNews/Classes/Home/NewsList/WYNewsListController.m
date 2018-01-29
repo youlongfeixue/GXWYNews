@@ -15,6 +15,7 @@
 static NSString *const normalCellID = @"normalCellID";
 static NSString *const extraCellID = @"extraCellID";
 static NSString *const bigImageCellID = @"bigImageCellID";
+static NSString *const headerCellID = @"headerCellID";
 
 @interface WYNewsListController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -62,7 +63,10 @@ static NSString *const bigImageCellID = @"bigImageCellID";
     WYNewsListItem *model = _newsList[indexPath.row];
     
     NSString *cellID = nil;
-    if (model.imgType == 1) {
+    
+    if (model.hasHead) {
+        cellID = headerCellID;
+    }else if (model.imgType == 1) {
         cellID = bigImageCellID;
     }else if (model.imgextra.count > 0) {
         cellID = extraCellID;
@@ -107,6 +111,7 @@ static NSString *const bigImageCellID = @"bigImageCellID";
     [tv registerNib:[UINib nibWithNibName:@"WYNewsNormalCell" bundle:nil] forCellReuseIdentifier:normalCellID];
     [tv registerNib:[UINib nibWithNibName:@"WYNewsExstraImagesCell" bundle:nil] forCellReuseIdentifier:extraCellID];
     [tv registerNib:[UINib nibWithNibName:@"WYNewsBigImageCell" bundle:nil] forCellReuseIdentifier:bigImageCellID];
+    [tv registerNib:[UINib nibWithNibName:@"WYNewsHeaderCell" bundle:nil] forCellReuseIdentifier:headerCellID];
     
     tv.estimatedRowHeight = 100;
     tv.rowHeight = UITableViewAutomaticDimension;
