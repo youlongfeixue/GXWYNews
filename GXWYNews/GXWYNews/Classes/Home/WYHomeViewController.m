@@ -7,6 +7,7 @@
 //
 
 #import "WYHomeViewController.h"
+#import "WYChannelView.h"
 
 @interface WYHomeViewController ()
 
@@ -16,22 +17,49 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self setupUI];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+
+#pragma mark - Actions
+
+
+
+#pragma mark - delegates
+
+
+
+
+#pragma mark - methods
+
+
+
+
+#pragma mark - setupUI
+
+- (void)setupUI {
+    
+    WYChannelView *cv = [WYChannelView channelView];
+    [self.view addSubview:cv];
+    
+    [cv mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.mas_topLayoutGuideBottom);
+        make.left.right.equalTo(self.view);
+        make.height.mas_equalTo(38);
+    }];
+    
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
+#pragma mark - setter & getter
+
+
+
+
+
+
 
 @end

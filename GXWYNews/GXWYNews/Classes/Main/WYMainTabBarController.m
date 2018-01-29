@@ -47,7 +47,7 @@
     
     // 视图控制器的字典数组
     NSArray *arr = @[
-                     @{@"clsName": @"UIViewController", @"title": @"新闻", @"imageName": @"news"},
+                     @{@"clsName": @"WYHomeViewController", @"title": @"新闻", @"imageName": @"news"},
                      @{@"clsName": @"UIViewController", @"title": @"阅读", @"imageName": @"reader"},
                      @{@"clsName": @"UIViewController", @"title": @"视频", @"imageName": @"media"},
                      @{@"clsName": @"UIViewController", @"title": @"话题", @"imageName": @"bar"},

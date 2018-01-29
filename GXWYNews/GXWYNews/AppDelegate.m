@@ -31,8 +31,8 @@
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _window.backgroundColor = [UIColor whiteColor];
     
-//    Class cls = NSClassFromString(@"WYMainTabBarController");
-    Class cls = NSClassFromString(@"WYNewsListController");
+    Class cls = NSClassFromString(@"WYMainTabBarController"); //mainTabVc
+//    Class cls = NSClassFromString(@"WYNewsListController"); //newsListVc
     
     UIViewController *vc = [cls new];
     
