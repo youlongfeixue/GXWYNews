@@ -43,9 +43,7 @@
     
     int idx = 0;
     for (NSDictionary *dict in _model.imgextra) {
-        NSURL *url = [NSURL URLWithString:dict[@"imgsrc"]];
-        
-        [_extralIcon[idx++] sd_setImageWithURL:url];
+        [_extralIcon[idx++] gx_setImageWithURLString:dict[@"imgsrc"]];
     }
 }
 
