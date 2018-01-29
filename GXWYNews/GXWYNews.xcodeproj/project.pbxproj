@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EA53D0B2201F492C000B1787 /* WYNewsBigImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA53D0B1201F492C000B1787 /* WYNewsBigImageCell.xib */; };
 		EA53D0B4201F575E000B1787 /* WYNewsHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA53D0B3201F575E000B1787 /* WYNewsHeaderCell.xib */; };
+		EA53D0B7201F5E91000B1787 /* UIImageView+gx_WebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EA53D0B6201F5E91000B1787 /* UIImageView+gx_WebImage.m */; };
 		EAA56B91201CBB7D00E7A95C /* WYNewsListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA56B90201CBB7D00E7A95C /* WYNewsListItem.m */; };
 		EAA56B97201CBE7900E7A95C /* WYNewsNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA56B95201CBE7900E7A95C /* WYNewsNormalCell.xib */; };
 		EAA56B9C201CC85F00E7A95C /* WYNewsExstraImagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA56B9A201CC85F00E7A95C /* WYNewsExstraImagesCell.xib */; };
@@ -70,6 +71,8 @@
 		E9DBB0ECCE5069E2362D4DB6 /* Pods-GXWYNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXWYNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GXWYNews/Pods-GXWYNews.debug.xcconfig"; sourceTree = "<group>"; };
 		EA53D0B1201F492C000B1787 /* WYNewsBigImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYNewsBigImageCell.xib; sourceTree = "<group>"; };
 		EA53D0B3201F575E000B1787 /* WYNewsHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYNewsHeaderCell.xib; sourceTree = "<group>"; };
+		EA53D0B5201F5E91000B1787 /* UIImageView+gx_WebImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+gx_WebImage.h"; sourceTree = "<group>"; };
+		EA53D0B6201F5E91000B1787 /* UIImageView+gx_WebImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+gx_WebImage.m"; sourceTree = "<group>"; };
 		EAA56B8F201CBB7D00E7A95C /* WYNewsListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYNewsListItem.h; sourceTree = "<group>"; };
 		EAA56B90201CBB7D00E7A95C /* WYNewsListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYNewsListItem.m; sourceTree = "<group>"; };
 		EAA56B95201CBE7900E7A95C /* WYNewsNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYNewsNormalCell.xib; sourceTree = "<group>"; };
@@ -333,6 +336,7 @@
 		EAB395F0201B90450054B5BD /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				EAB395FA201B90450054B5BD /* GXAdditions.h */,
 				EAB39618201B90450054B5BD /* Log */,
 				EAB395F1201B90450054B5BD /* NSFileHandle+Addition.m */,
 				EAB395F2201B90450054B5BD /* UIButton+GXAddition.h */,
@@ -343,7 +347,6 @@
 				EAB395F7201B90450054B5BD /* UIView+GXAddition.m */,
 				EAB395F8201B90450054B5BD /* NSMutableArray+Helper.m */,
 				EAB395F9201B90450054B5BD /* NSURLSession+GXAddition.m */,
-				EAB395FA201B90450054B5BD /* GXAdditions.h */,
 				EAB395FB201B90450054B5BD /* UILabel+GXAddition.m */,
 				EAB395FC201B90450054B5BD /* UIScrollView+GXAddition.m */,
 				EAB395FD201B90450054B5BD /* UIViewController+GXAddition.h */,
@@ -356,6 +359,7 @@
 				EAB39604201B90450054B5BD /* NSString+GXAddition.h */,
 				EAB39605201B90450054B5BD /* UIView+Jump.m */,
 				EAB39606201B90450054B5BD /* UIImage+GXAddition.h */,
+				EAB3961E201B90450054B5BD /* UIImage+GXAddition.m */,
 				EAB39607201B90450054B5BD /* NSArray+Addition.m */,
 				EAB39608201B90450054B5BD /* UINavigationController+GXAddition.m */,
 				EAB39609201B90450054B5BD /* NSData+GXAddition.h */,
@@ -376,7 +380,6 @@
 				EAB3961B201B90450054B5BD /* NSMutableArray+Helper.h */,
 				EAB3961C201B90450054B5BD /* NSArray+Addition.h */,
 				EAB3961D201B90450054B5BD /* UINavigationController+GXAddition.h */,
-				EAB3961E201B90450054B5BD /* UIImage+GXAddition.m */,
 				EAB3961F201B90450054B5BD /* UIView+Jump.h */,
 				EAB39620201B90450054B5BD /* NSString+GXAddition.m */,
 				EAB39621201B90450054B5BD /* UIControl+GXAddition.h */,
@@ -384,6 +387,8 @@
 				EAB39623201B90450054B5BD /* NSDictionary+GXAddition.m */,
 				EAB39624201B90450054B5BD /* Iterator.h */,
 				EAB39625201B90450054B5BD /* NSData+GXAddition.m */,
+				EA53D0B5201F5E91000B1787 /* UIImageView+gx_WebImage.h */,
+				EA53D0B6201F5E91000B1787 /* UIImageView+gx_WebImage.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -625,6 +630,7 @@
 				EAB39659201B90450054B5BD /* UIImage+GXAddition.m in Sources */,
 				EAB39651201B90450054B5BD /* NSObject+GXAddition.m in Sources */,
 				EAB39650201B90450054B5BD /* UIPickerView+GXAddition.m in Sources */,
+				EA53D0B7201F5E91000B1787 /* UIImageView+gx_WebImage.m in Sources */,
 				EAB3964A201B90450054B5BD /* UILabel+GXAddition.m in Sources */,
 				EAB3965F201B90450054B5BD /* GXBaseTextView.m in Sources */,
 				EAB3964B201B90450054B5BD /* UIScrollView+GXAddition.m in Sources */,
