@@ -10,7 +10,7 @@
 
 @interface UIImageView (gx_WebImage)
 
-/// 使用 urlStr 设置网络图片
+/// 使用 urlStr 设置网络图片 (隔离 SDWebImage，减小耦合性)
 - (void)gx_setImageWithURLString:(NSString *)urlStr;
 
 

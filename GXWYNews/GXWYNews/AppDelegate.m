@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <AFNetworkActivityIndicatorManager.h>
 
 @interface AppDelegate ()
 
@@ -18,7 +19,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    // appearance 在 window 创建前设置
+    // 设置网络指示器  “小菊花”
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;    
+    
+    // 设置统一外观 - appearance 在 window 创建前设置
     [self setupAppearance];
     
     
