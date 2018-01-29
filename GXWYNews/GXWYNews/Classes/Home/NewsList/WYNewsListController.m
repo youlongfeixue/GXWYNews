@@ -76,18 +76,7 @@ static NSString *const headerCellID = @"headerCellID";
     
     WYBaseNewsListCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
     
-    cell.lblTitle.text = model.title;
-    cell.lblSource.text = model.source;
-    cell.lblReply.text = @(model.replyCount).description;
-    
-    [cell.iconView sd_setImageWithURL:[NSURL URLWithString:model.imgsrc]]; 
-
-    int idx = 0;
-    for (NSDictionary *dict in model.imgextra) {
-        NSURL *url = [NSURL URLWithString:dict[@"imgsrc"]];
-        
-        [cell.extralIcon[idx++] sd_setImageWithURL:url];
-    }
+    cell.model = model;
     
     return cell;
 }

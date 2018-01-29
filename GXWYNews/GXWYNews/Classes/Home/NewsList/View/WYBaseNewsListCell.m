@@ -7,6 +7,18 @@
 //
 
 #import "WYBaseNewsListCell.h"
+#import "WYNewsListItem.h"
+#import <UIImageView+WebCache.h>
+
+@interface WYBaseNewsListCell ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *iconView;
+@property (weak, nonatomic) IBOutlet UILabel *lblTitle;
+@property (weak, nonatomic) IBOutlet UILabel *lblSource;
+@property (weak, nonatomic) IBOutlet UILabel *lblReply;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *extralIcon;
+
+@end
 
 @implementation WYBaseNewsListCell
 
@@ -15,10 +27,39 @@
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
+
+
+
+
+- (void)setModel:(WYNewsListItem *)model {
+    _model = model;
+    
+    _lblTitle.text = _model.title;
+    _lblSource.text = _model.source;
+    _lblReply.text = @(_model.replyCount).description;
+    
+    [_iconView sd_setImageWithURL:[NSURL URLWithString:_model.imgsrc]]; 
+    
+    int idx = 0;
+    for (NSDictionary *dict in _model.imgextra) {
+        NSURL *url = [NSURL URLWithString:dict[@"imgsrc"]];
+        
+        [_extralIcon[idx++] sd_setImageWithURL:url];
+    }
 }
 
+
+
 @end
+
+
+
+
+
+
+
+
+
+
+

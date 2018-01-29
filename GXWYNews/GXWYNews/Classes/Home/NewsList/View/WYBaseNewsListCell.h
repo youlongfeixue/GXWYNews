@@ -7,13 +7,31 @@
 //
 
 #import "GXBaseTableViewCell.h"
+@class WYNewsListItem;
 
 @interface WYBaseNewsListCell : GXBaseTableViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *iconView;
-@property (weak, nonatomic) IBOutlet UILabel *lblTitle;
-@property (weak, nonatomic) IBOutlet UILabel *lblSource;
-@property (weak, nonatomic) IBOutlet UILabel *lblReply;
-@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *extralIcon;
+
+@property (nonatomic, strong) WYNewsListItem *model;
+
+
+
+
+
+
+
+
+
 
 @end
+
+
+
+
+
+
+
+
+
+
+
