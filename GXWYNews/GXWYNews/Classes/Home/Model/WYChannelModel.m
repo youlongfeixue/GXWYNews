@@ -21,7 +21,13 @@
     NSArray *arr = dict[@"tList"];
     
     NSArray *modelList = [NSArray yy_modelArrayWithClass:[self class] json:arr];
-    return modelList;
+    
+    NSArray *result = [modelList sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        //
+        return [((WYChannelModel *)obj1).tid compare:((WYChannelModel *)obj2).tid]; //asc
+    }];
+    
+    return result;
 }
 
 - (NSString *)description {
