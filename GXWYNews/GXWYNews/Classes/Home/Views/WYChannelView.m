@@ -26,7 +26,15 @@
 
 
 
-
+- (void)setChannelList:(NSArray<WYChannelModel *> *)channelList {
+    _channelList = channelList;
+    
+    // add subControl 2 scrollView
+    for (WYChannelModel *channel in _channelList) {
+        UILabel *lb = [UILabel gx_labelWithText:channel.tname fontSize:14 color:[UIColor blackColor]];
+        [_scrollView addSubview:lb];
+    }
+}
 
 
 @end

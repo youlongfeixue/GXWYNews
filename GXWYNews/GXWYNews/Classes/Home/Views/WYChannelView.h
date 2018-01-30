@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WYChannelModel.h"
 
 @interface WYChannelView : UIView
 
 + (instancetype)channelView;
 
-
+@property (nonatomic, strong) NSArray<WYChannelModel *> *channelList;
 
 @end

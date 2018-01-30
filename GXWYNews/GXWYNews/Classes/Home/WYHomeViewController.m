@@ -14,6 +14,8 @@
 
 @property (nonatomic, strong) NSArray<WYChannelModel *> *channelList;
 
+@property (nonatomic, weak) WYChannelView *channelView; 
+
 @end
 
 @implementation WYHomeViewController
@@ -23,7 +25,9 @@
     
     [self setupUI];
     _channelList = [WYChannelModel channelList];
-    NSLog(@"chennelList = %@", _channelList);
+//    NSLog(@"chennelList = %@", _channelList);
+    
+    _channelView.channelList = _channelList;
 }
 
 
@@ -48,6 +52,7 @@
     
     WYChannelView *cv = [WYChannelView channelView];
     [self.view addSubview:cv];
+    self.channelView = cv;
     
     [cv mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.mas_topLayoutGuideBottom);
