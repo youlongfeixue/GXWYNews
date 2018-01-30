@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EA17DB702020AC0900CC7FF5 /* WYChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA17DB6F2020AC0900CC7FF5 /* WYChannelModel.m */; };
 		EA17DB722020AC2900CC7FF5 /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = EA17DB712020AC2800CC7FF5 /* topic_news.json */; };
+		EA17DB752020B2CC00CC7FF5 /* WYChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA17DB742020B2CC00CC7FF5 /* WYChannelLabel.m */; };
 		EA53D0B2201F492C000B1787 /* WYNewsBigImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA53D0B1201F492C000B1787 /* WYNewsBigImageCell.xib */; };
 		EA53D0B4201F575E000B1787 /* WYNewsHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA53D0B3201F575E000B1787 /* WYNewsHeaderCell.xib */; };
 		EA53D0B7201F5E91000B1787 /* UIImageView+gx_WebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EA53D0B6201F5E91000B1787 /* UIImageView+gx_WebImage.m */; };
@@ -76,6 +77,8 @@
 		EA17DB6E2020AC0900CC7FF5 /* WYChannelModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYChannelModel.h; sourceTree = "<group>"; };
 		EA17DB6F2020AC0900CC7FF5 /* WYChannelModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYChannelModel.m; sourceTree = "<group>"; };
 		EA17DB712020AC2800CC7FF5 /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
+		EA17DB732020B2CC00CC7FF5 /* WYChannelLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYChannelLabel.h; sourceTree = "<group>"; };
+		EA17DB742020B2CC00CC7FF5 /* WYChannelLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYChannelLabel.m; sourceTree = "<group>"; };
 		EA53D0B1201F492C000B1787 /* WYNewsBigImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYNewsBigImageCell.xib; sourceTree = "<group>"; };
 		EA53D0B3201F575E000B1787 /* WYNewsHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYNewsHeaderCell.xib; sourceTree = "<group>"; };
 		EA53D0B5201F5E91000B1787 /* UIImageView+gx_WebImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+gx_WebImage.h"; sourceTree = "<group>"; };
@@ -235,6 +238,8 @@
 				EA53D0BB201F75A1000B1787 /* WYChannelView.h */,
 				EA53D0BC201F75A1000B1787 /* WYChannelView.m */,
 				EA53D0B9201F72C7000B1787 /* WYChannelView.xib */,
+				EA17DB732020B2CC00CC7FF5 /* WYChannelLabel.h */,
+				EA17DB742020B2CC00CC7FF5 /* WYChannelLabel.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -641,6 +646,7 @@
 				EAB3965D201B90450054B5BD /* NSData+GXAddition.m in Sources */,
 				EAB39666201B90450054B5BD /* GXGenericity.m in Sources */,
 				EAB39658201B90450054B5BD /* NSArray+Log.m in Sources */,
+				EA17DB752020B2CC00CC7FF5 /* WYChannelLabel.m in Sources */,
 				EAB39669201B90450054B5BD /* GXBaseNavigationController.m in Sources */,
 				EAB3964E201B90450054B5BD /* NSArray+Addition.m in Sources */,
 				EAB3965B201B90450054B5BD /* UIView+Extension.m in Sources */,

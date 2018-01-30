@@ -7,6 +7,7 @@
 //
 
 #import "WYChannelView.h"
+#import "WYChannelLabel.h"
 
 @interface WYChannelView ()
 
@@ -31,7 +32,7 @@
     
     // add subControl 2 scrollView
     for (WYChannelModel *channel in _channelList) {
-        UILabel *lb = [UILabel gx_labelWithText:channel.tname fontSize:14 color:[UIColor blackColor]];
+        WYChannelLabel *lb = [WYChannelLabel channelLabelWithTitle:channel.tname];
         [_scrollView addSubview:lb];
     }
 }
