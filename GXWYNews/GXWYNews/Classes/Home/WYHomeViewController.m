@@ -50,6 +50,7 @@
 #pragma mark - setupUI
 
 - (void)setupUI {
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     WYChannelView *cv = [WYChannelView channelView];
     [self.view addSubview:cv];
