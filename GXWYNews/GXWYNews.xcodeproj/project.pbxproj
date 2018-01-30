@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA17DB702020AC0900CC7FF5 /* WYChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA17DB6F2020AC0900CC7FF5 /* WYChannelModel.m */; };
+		EA17DB722020AC2900CC7FF5 /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = EA17DB712020AC2800CC7FF5 /* topic_news.json */; };
 		EA53D0B2201F492C000B1787 /* WYNewsBigImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA53D0B1201F492C000B1787 /* WYNewsBigImageCell.xib */; };
 		EA53D0B4201F575E000B1787 /* WYNewsHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA53D0B3201F575E000B1787 /* WYNewsHeaderCell.xib */; };
 		EA53D0B7201F5E91000B1787 /* UIImageView+gx_WebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EA53D0B6201F5E91000B1787 /* UIImageView+gx_WebImage.m */; };
@@ -71,6 +73,9 @@
 		74E2993B90FD2D91272E388E /* libPods-GXWYNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GXWYNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3725BAB7DCC142409642F21 /* Pods-GXWYNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXWYNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-GXWYNews/Pods-GXWYNews.release.xcconfig"; sourceTree = "<group>"; };
 		E9DBB0ECCE5069E2362D4DB6 /* Pods-GXWYNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXWYNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GXWYNews/Pods-GXWYNews.debug.xcconfig"; sourceTree = "<group>"; };
+		EA17DB6E2020AC0900CC7FF5 /* WYChannelModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYChannelModel.h; sourceTree = "<group>"; };
+		EA17DB6F2020AC0900CC7FF5 /* WYChannelModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYChannelModel.m; sourceTree = "<group>"; };
+		EA17DB712020AC2800CC7FF5 /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
 		EA53D0B1201F492C000B1787 /* WYNewsBigImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYNewsBigImageCell.xib; sourceTree = "<group>"; };
 		EA53D0B3201F575E000B1787 /* WYNewsHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYNewsHeaderCell.xib; sourceTree = "<group>"; };
 		EA53D0B5201F5E91000B1787 /* UIImageView+gx_WebImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+gx_WebImage.h"; sourceTree = "<group>"; };
@@ -214,6 +219,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EA17DB6D201F7C8300CC7FF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA17DB712020AC2800CC7FF5 /* topic_news.json */,
+				EA17DB6E2020AC0900CC7FF5 /* WYChannelModel.h */,
+				EA17DB6F2020AC0900CC7FF5 /* WYChannelModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EA53D0B8201F64C3000B1787 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,11 +316,12 @@
 		EAB39556201A28D20054B5BD /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				EAB395E0201B86C30054B5BD /* NewsList */,
-				EAB395E1201B86CF0054B5BD /* NewsDetail */,
 				EAB39558201A28D20054B5BD /* WYHomeViewController.h */,
 				EAB39557201A28D20054B5BD /* WYHomeViewController.m */,
 				EA53D0B8201F64C3000B1787 /* Views */,
+				EA17DB6D201F7C8300CC7FF5 /* Model */,
+				EAB395E0201B86C30054B5BD /* NewsList */,
+				EAB395E1201B86CF0054B5BD /* NewsDetail */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -542,6 +558,7 @@
 			files = (
 				EAA56B97201CBE7900E7A95C /* WYNewsNormalCell.xib in Resources */,
 				EA53D0B2201F492C000B1787 /* WYNewsBigImageCell.xib in Resources */,
+				EA17DB722020AC2900CC7FF5 /* topic_news.json in Resources */,
 				EAA56B9C201CC85F00E7A95C /* WYNewsExstraImagesCell.xib in Resources */,
 				EAB39541201A26210054B5BD /* LaunchScreen.storyboard in Resources */,
 				EA53D0BA201F72C7000B1787 /* WYChannelView.xib in Resources */,
@@ -628,6 +645,7 @@
 				EAB3964E201B90450054B5BD /* NSArray+Addition.m in Sources */,
 				EAB3965B201B90450054B5BD /* UIView+Extension.m in Sources */,
 				EAA56B91201CBB7D00E7A95C /* WYNewsListItem.m in Sources */,
+				EA17DB702020AC0900CC7FF5 /* WYChannelModel.m in Sources */,
 				EAB3955D201A28D20054B5BD /* WYHomeViewController.m in Sources */,
 				EAB39655201B90450054B5BD /* NSNumber+GXAddition.m in Sources */,
 				EAB39649201B90450054B5BD /* NSURLSession+GXAddition.m in Sources */,

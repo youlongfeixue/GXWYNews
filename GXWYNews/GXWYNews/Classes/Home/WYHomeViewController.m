@@ -8,8 +8,11 @@
 
 #import "WYHomeViewController.h"
 #import "WYChannelView.h"
+#import "WYChannelModel.h"
 
 @interface WYHomeViewController ()
+
+@property (nonatomic, strong) NSArray<WYChannelModel *> *channelList;
 
 @end
 
@@ -19,6 +22,8 @@
     [super viewDidLoad];
     
     [self setupUI];
+    _channelList = [WYChannelModel channelList];
+    NSLog(@"chennelList = %@", _channelList);
 }
 
 
@@ -51,6 +56,9 @@
     }];
     
 }
+
+
+
 
 
 
