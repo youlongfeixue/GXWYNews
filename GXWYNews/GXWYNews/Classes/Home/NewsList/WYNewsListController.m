@@ -104,6 +104,18 @@ static NSString *const headerCellID = @"headerCellID";
     
     tv.estimatedRowHeight = 100;
     tv.rowHeight = UITableViewAutomaticDimension;
+    
+    /* iOS 10- 适应如下设置 */
+    // 设置 scrollView.contentInset 可以既能保证 navBar/tabBar 下面有穿透效果，又能保证最后不被其覆盖！
+    // tabBar 的高度为 49 。
+    
+    //    tv.contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
+    
+    /* 
+     - iOS 11+ 默认不设置 contenInset 就既有穿透效果滚动结束时又不被覆盖
+     - 如果手动设置上下的值，反而会有叠加。
+     */
+
 }
 
 
