@@ -28,6 +28,7 @@
     _channelList = [WYChannelModel channelList];
 //    NSLog(@"chennelList = %@", _channelList);
     
+    
     _channelView.channelList = _channelList;
 }
 
